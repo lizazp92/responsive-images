@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive images</title>
+    <link rel="stylesheet" href="./css/responsive-img.css" />
+  </head>
+  <body>
+    <main>
+      <section class="ocean">
+        <div class="wave"></div>
+        <div class="water">
+          <div class="starfish"></div>
+          <div class="starfish1"></div>
+          <picture class="fish1">
+            <source media="(max-width: 900px)" srcset="./img/fish1-200w.png" />
+            <source srcset="./img/fish1-350w.png" />
+            <img src="./img/fish1-fallback.jpg" alt="fish1" />
+          </picture>
+
+          <picture class="crab">
+            <source media="(max-width: 900px)" srcset="./img/crab-200w.png" />
+            <source srcset="./img/crab-350w.png" />
+            <img src="./img/crab-fallback.jpg" alt="crab" />
+          </picture>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
